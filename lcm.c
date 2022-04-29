@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int LCM(int, int);
 int main()
 {
@@ -13,7 +14,7 @@ int main()
 }
 int LCM(int a , int b)
 {
-    int m = 0;
+   static int m = 0;
     m = m + b;
     if(m % a == 0 && m % b == 0)
     {
